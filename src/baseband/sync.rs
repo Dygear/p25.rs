@@ -1,6 +1,9 @@
 //! Utilities for detecting the frame synchronization sequence and extracting symbol
 //! decoding thresholds from it.
 
+extern crate num;
+use self::num::Zero;
+
 use std;
 
 use collect_slice::CollectSlice;
