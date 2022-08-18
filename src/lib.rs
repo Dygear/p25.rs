@@ -6,7 +6,7 @@ extern crate cai_cyclic;
 extern crate cai_golay;
 extern crate collect_slice;
 extern crate moving_avg;
-extern crate num_traits;
+extern crate num;
 
 #[cfg(feature = "ser")]
 #[macro_use]

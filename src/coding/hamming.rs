@@ -5,7 +5,7 @@
 //! and Cryptography: The Essentials*, Hankerson, Hoffman, et al, 2000.
 
 use binfield_matrix::{matrix_mul, matrix_mul_systematic};
-use num_traits::PrimInt;
+use num::PrimInt;
 
 /// Encoding and decoding of the (15, 11, 3) code.
 pub mod standard {
