@@ -2,7 +2,7 @@
 //! decoding thresholds from it.
 
 extern crate num;
-use self::num::Zero;
+use num::Zero;
 
 use std;
 
