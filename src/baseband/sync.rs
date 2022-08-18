@@ -160,10 +160,10 @@ impl SyncDetector {
     }
 }
 
-/// Fingerprint of 24-symbol frame sync pulse waveform.
-///
-/// The first sample represents the impulse instant of the first symbol, and the last
-/// sample represents the impulse instant of the final symbol.
+// Fingerprint of 24-symbol frame sync pulse waveform.
+//
+// The first sample represents the impulse instant of the first symbol, and the last
+// sample represents the impulse instant of the final symbol.
 impl_fir!(SyncFingerprint, f32, FINGERPRINT_SAMPS, [
     1.0,
 
@@ -600,7 +600,7 @@ mod test {
             -1.0,
         ];
 
-        let mut corr = FirFilter::<SyncFingerprint>::new();
+        let mut corr = FIRFilter::<SyncFingerprint>::new();
 
         let val = samps.iter().fold(0.0, |_, &s| {
             corr.feed(s)

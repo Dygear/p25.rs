@@ -89,7 +89,7 @@ const GEN: &'static [u16] = &[
     0b0000000000000011,
 ];
 
-/// Polynomial coefficients for BCH decoding.
+// Polynomial coefficients for BCH decoding.
 impl_polynomial_coefs!(BchCoefs, 23);
 
 /// Polynomial with BCH coefficients.

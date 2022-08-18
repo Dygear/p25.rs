@@ -191,13 +191,13 @@ fn extract_data<P>(poly: Polynomial<P>, data: &mut [Hexbit]) -> &[Hexbit]
     data
 }
 
-/// Polynomial coefficients for the short code.
+// Polynomial coefficients for the short code.
 impl_polynomial_coefs!(ShortCoefs, 13, 24);
 
-/// Polynomial coefficients for the medium code.
+// Polynomial coefficients for the medium code.
 impl_polynomial_coefs!(MedCoefs, 9, 24);
 
-/// Polynomial coefficients for the long code.
+// Polynomial coefficients for the long code.
 impl_polynomial_coefs!(LongCoefs, 17, 36);
 
 #[cfg(test)]

@@ -136,13 +136,13 @@ impl TsbkOpcode {
             0b001000 => Some(PhoneGrant),
             0b001001 => Some(Reserved),
             0b001010 => Some(PhoneAlert),
-            0b001011...0b001111 => Some(Reserved),
+            0b001011..=0b001111 => Some(Reserved),
 
             0b010000 => Some(UnitDataGrant),
             0b010001 => Some(GroupDataGrant),
             0b010010 => Some(GroupDataUpdate),
             0b010011 => Some(GroupDataUpdateExplicit),
-            0b010100...0b010111 => Some(Reserved),
+            0b010100..=0b010111 => Some(Reserved),
 
             0b011000 => Some(UnitStatusUpdate),
             0b011001 => Some(Reserved),
@@ -170,7 +170,7 @@ impl TsbkOpcode {
             0b101110 => Some(UnitAuthCommand),
             0b101111 => Some(UnitDeregAck),
 
-            0b110000...0b110101 => Some(Reserved),
+            0b110000..=0b110101 => Some(Reserved),
             0b110110 => Some(RoamingAddrCommand),
             0b110111 => Some(RoamingAddrUpdate),
 

@@ -71,23 +71,23 @@ macro_rules! small_storage_type {
     };
 }
 
-/// Stores hexbits that make up a voice header packet.
+// Stores hexbits that make up a voice header packet.
 storage_type!(VoiceHeaderStorage, [bits::Hexbit; consts::HEADER_HEXBITS]);
-/// Stores dibits that make up a voice frame packet.
+// Stores dibits that make up a voice frame packet.
 storage_type!(VoiceFrameStorage, [bits::Dibit; consts::FRAME_DIBITS]);
-/// Stores hexbits that make up a voice extra packet.
+// Stores hexbits that make up a voice extra packet.
 storage_type!(VoiceExtraStorage, [bits::Hexbit; consts::EXTRA_HEXBITS]);
-/// Stores dibits that make up a data/TSBK payload packet.
+// Stores dibits that make up a data/TSBK payload packet.
 storage_type!(DataPayloadStorage, [bits::Dibit; consts::CODING_DIBITS]);
-/// Stores dibits that make up the NID word.
+// Stores dibits that make up the NID word.
 small_storage_type!(NidStorage, consts::NID_DIBITS);
-/// Stores dibits that make up each coded word in a voice extra component.
+// Stores dibits that make up each coded word in a voice extra component.
 small_storage_type!(VoiceExtraWordStorage, consts::EXTRA_WORD_DIBITS);
-/// Stores dibits that make up a voice data fragment.
+// Stores dibits that make up a voice data fragment.
 small_storage_type!(VoiceDataFragStorage, consts::DATA_FRAG_DIBITS);
-/// Stores dibits that make up a coded word in a voice header packet.
+// Stores dibits that make up a coded word in a voice header packet.
 small_storage_type!(VoiceHeaderWordStorage, consts::HEADER_WORD_DIBITS);
-/// Stores dibits that make up a coded word in a voice LC terminator packet.
+// Stores dibits that make up a coded word in a voice LC terminator packet.
 small_storage_type!(VoiceLCTermWordStorage, consts::LC_TERM_WORD_DIBITS);
 
 /// Implements a state machine that buffers items to a backing store and notifies the caller when

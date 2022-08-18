@@ -121,7 +121,7 @@ impl<E: Extra> FrameGroupReceiver<E> {
 
                     EventChange(FrameGroupEvent::VoiceFrame(vf), match self.frame {
                         1 => State::decode_voice_frame(),
-                        2...7 => DecodeExtra,
+                        2..=7 => DecodeExtra,
                         8 => State::decode_data_frag(),
                         9 => Done,
                         _ => unreachable!(),
