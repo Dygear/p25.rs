@@ -1,6 +1,6 @@
 [package]
 name = "p25"
-version = "1.0.1"
+version = "1.0.2"
 authors = ["Mick Koch <mick@kochm.co>", "Mark Tomlin <Dygear@gmail.com>"]
 
 [dependencies]
